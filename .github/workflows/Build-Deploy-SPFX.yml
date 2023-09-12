@@ -60,7 +60,7 @@ jobs:
     - name: Office 365 CLI Send email
       uses: pnp/action-cli-runscript@v1.0.0
       with:
-         O365_CLI_SCRIPT: o365 spo mail send --webUrl https://contoso.sharepoint.com/sites/teamsite --to 'user@contoso.onmicrosoft.com' --subject 'Deployment done' --body '<h2>Office 365 CLI</h2> <p>The deployment is complete.</p> <br/> Email sent via Office 365 CLI GitHub Action.'
+         O365_CLI_SCRIPT: o365 spo mail send --webUrl https://vkj05.sharepoint.com/sites/spfxdev/ --to 'spdev.onmicrosoft.com@vkj05.onmicrosoft.com' --subject 'Deployment done' --body '<h2>Office 365 CLI</h2> <p>The deployment is complete.</p> <br/> Email sent via Office 365 CLI GitHub Action.'
       if: env.SEND_MAIL == 'true'
     # Print the id of the app
     - name: Get the id of the app deployed
